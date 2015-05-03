@@ -4,9 +4,6 @@ require_relative 'models'
 
 set :bind, '0.0.0.0'
 set :port, 8080
-get '/' do
-  "Hello world"
-end
 
 def configure_database
   if ENV['RACK_ENV']=="production"
